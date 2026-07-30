@@ -92,27 +92,6 @@ script.js
 
 ---
 
-## ▶️ How to Run
-
-### Frontend Applications
-
-1. Navigate to the project folder  
-2. Open `index.html` in a web browser  
-
-### Java Programs
-
-Compile:
-```
-javac FileName.java
-```
-
-Run:
-```
-java FileName
-```
-
----
-
 ## 📈 Roadmap
 
 - Backend integration using Java Servlets  
