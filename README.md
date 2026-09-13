@@ -8,11 +8,11 @@
 
 A structured collection of web applications and programs built using **HTML, CSS, JavaScript, and Java**.
 <p align="left">
-  <img src="20260913_153951.jpg" width="120"/>
-  <img src="20260913_155300.jpg" width="120"/>
-  <img src="20260913_155353.jpg" width="120"/>
-  <img src="Screenshot_20260913-154554_Chrome.jpg" width="120"/>
-  <img src="20260913_155335.jpg" width="120"/>
+  <img src="assets/20260913_153951.jpg" width="120"/>
+  <img src="assets/20260913_155300.jpg" width="120"/>
+  <img src="assets/20260913_155353.jpg" width="120"/>
+  <img src="assets/Screenshot_20260913-154554_Chrome.jpg" width="120"/>
+  <img src="assets/20260913_155335.jpg" width="120"/>
 </p>
 This repository serves as a practical development workspace focused on strengthening frontend fundamentals, UI design principles, and object-oriented programming concepts while progressively integrating backend logic.
 
