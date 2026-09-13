@@ -7,7 +7,13 @@
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 
 A structured collection of web applications and programs built using **HTML, CSS, JavaScript, and Java**.
-
+<p align="left">
+  <img src="CalcupressLightMode.jpg" width="120"/>
+  <img src="CalcupressDarkMode.jpg" width="120"/>
+  <img src="ConverterMenu.jpg" width="120"/>
+  <img src="DataConverter.jpg" width="120"/>
+  <img src="TimeConverter.jpg" width="120"/>
+</p>
 This repository serves as a practical development workspace focused on strengthening frontend fundamentals, UI design principles, and object-oriented programming concepts while progressively integrating backend logic.
 
 ---
