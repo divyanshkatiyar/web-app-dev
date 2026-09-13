@@ -3,8 +3,8 @@ const urlsToCache = [
   './',
   './index.html',
   './manifest.json',
-  'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap',
-  'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0'
+  './assets/icon-192.png',
+  './assets/icon-512.png'
 ];
 
 self.addEventListener('install', event => {
