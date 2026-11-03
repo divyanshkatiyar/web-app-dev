@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Material You SMS & AI</title>
-<meta name="theme-color" content="#6750A4">
+<title>Student Management | SMS AI</title>
+<meta name="theme-color" content="#1A73E8">
 <meta name="color-scheme" content="light dark">
 <meta name="description" content="Material You student management portal with local student record management and an assistant.">
 <link rel="manifest" href="manifest.json">
@@ -15,22 +15,22 @@
 <style>
     :root {
         /* Material You Light Theme */
-        --primary: #6750A4;
+        --primary: #1A73E8;
         --on-primary: #FFFFFF;
-        --primary-container: #EADDFF;
-        --on-primary-container: #21005D;
-        --secondary: #625B71;
-        --secondary-container: #E8DEF8;
-        --on-secondary-container: #1D192B;
-        --background: #FFFBFE;
-        --surface: #FDF8FD;
-        --surface-variant: #E7E0EC;
-        --on-surface: #1C1B1F;
-        --on-surface-variant: #49454F;
-        --error: #B3261E;
-        --error-container: #F9DEDC;
+        --primary-container: #E8F0FE;
+        --on-primary-container: #174EA6;
+        --secondary: #5F6368;
+        --secondary-container: #E8F0FE;
+        --on-secondary-container: #202124;
+        --background: #F6F8FC;
+        --surface: #FFFFFF;
+        --surface-variant: #DADCE0;
+        --on-surface: #202124;
+        --on-surface-variant: #5F6368;
+        --error: #D93025;
+        --error-container: #FCE8E6;
         --on-error: #FFFFFF;
-        --outline: #79747E;
+        --outline: #80868B;
     }
 
     * {
@@ -356,24 +356,24 @@ html {
 }
 html[data-theme="dark"] {
     color-scheme: dark;
-    --primary: #D0BCFF;
-    --on-primary: #381E72;
-    --primary-container: #4F378B;
-    --on-primary-container: #F6EDFF;
-    --secondary: #CCC2DC;
-    --secondary-container: #4A4458;
-    --on-secondary-container: #E8DEF8;
-    --background: #141218;
-    --surface: #1D1B20;
-    --surface-variant: #333038;
-    --on-surface: #E6E1E9;
-    --on-surface-variant: #CAC4D0;
-    --error: #F2B8B5;
-    --error-container: #8C1D18;
-    --on-error: #601410;
-    --outline: #938F99;
+    --primary: #8AB4F8;
+    --on-primary: #062E6F;
+    --primary-container: #123B69;
+    --on-primary-container: #D2E3FC;
+    --secondary: #AECBFA;
+    --secondary-container: #243447;
+    --on-secondary-container: #E8F0FE;
+    --background: #000000;
+    --surface: #090909;
+    --surface-variant: #1B1B1B;
+    --on-surface: #E8EAED;
+    --on-surface-variant: #BDC1C6;
+    --error: #F28B82;
+    --error-container: #5F2120;
+    --on-error: #202124;
+    --outline: #80868B;
     --primary-container: color-mix(in srgb, var(--primary) 27%, #24212B);
-    --on-primary-container: #F6EDFF;
+    --on-primary-container: #D2E3FC;
     --secondary: color-mix(in srgb, var(--primary) 45%, var(--on-surface-variant));
     --secondary-container: color-mix(in srgb, var(--primary) 18%, var(--surface));
     --on-secondary-container: var(--on-surface);
@@ -382,24 +382,24 @@ html[data-theme="dark"] {
 @media (prefers-color-scheme: dark) {
     html[data-theme="system"] {
         color-scheme: dark;
-        --primary: #D0BCFF;
-        --on-primary: #381E72;
-        --primary-container: #4F378B;
-        --on-primary-container: #F6EDFF;
-        --secondary: #CCC2DC;
-        --secondary-container: #4A4458;
-        --on-secondary-container: #E8DEF8;
-        --background: #141218;
-        --surface: #1D1B20;
-        --surface-variant: #333038;
-        --on-surface: #E6E1E9;
-        --on-surface-variant: #CAC4D0;
-        --error: #F2B8B5;
-        --error-container: #8C1D18;
-        --on-error: #601410;
-        --outline: #938F99;
+        --primary: #8AB4F8;
+        --on-primary: #062E6F;
+        --primary-container: #123B69;
+        --on-primary-container: #D2E3FC;
+        --secondary: #AECBFA;
+        --secondary-container: #243447;
+        --on-secondary-container: #E8F0FE;
+        --background: #000000;
+        --surface: #090909;
+        --surface-variant: #1B1B1B;
+        --on-surface: #E8EAED;
+        --on-surface-variant: #BDC1C6;
+        --error: #F28B82;
+        --error-container: #5F2120;
+        --on-error: #202124;
+        --outline: #80868B;
         --primary-container: color-mix(in srgb, var(--primary) 27%, #24212B);
-        --on-primary-container: #F6EDFF;
+        --on-primary-container: #D2E3FC;
         --secondary: color-mix(in srgb, var(--primary) 45%, var(--on-surface-variant));
         --secondary-container: color-mix(in srgb, var(--primary) 18%, var(--surface));
         --on-secondary-container: var(--on-surface);
@@ -617,30 +617,373 @@ tbody tr:hover .avatar { transform: scale(1.04); }
 .appbar-stat .material-symbols-outlined { font-size: 20px; }
 .appbar-stat-label { color: var(--on-surface-variant); }
 .appbar-stat strong { color: var(--on-secondary-container); font-variant-numeric: tabular-nums; }
-.palette-controls { display: grid; gap: 10px; }
-.palette-swatches { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-start; gap: 12px; padding: 2px 12px 4px; }
-button.palette-swatch {
-    position: relative;
-    width: 36px;
-    height: 36px;
-    flex: 0 0 36px;
-    padding: 0;
-    border: 2px solid var(--surface);
-    outline: 1px solid transparent;
-    outline-offset: 2px;
-    border-radius: 50%;
-    background: var(--swatch);
-    box-shadow: 0 1px 4px rgba(0,0,0,.18);
-    transition: transform 180ms ease, outline-color 180ms ease, box-shadow 180ms ease;
-}
-button.palette-swatch:hover { transform: scale(1.1); box-shadow: 0 3px 8px rgba(0,0,0,.22); }
-button.palette-swatch.selected { outline: 2px solid var(--primary); }
 @media (max-width: 460px) {
     .appbar-stat { padding: 8px 10px; gap: 5px; }
     .appbar-stat-label { display: none; }
     .appbar-title { font-size: 1rem; }
     .appbar-subtitle { font-size: .72rem; }
 }
+
+
+
+/* Google Blue refresh: sharper geometry, clearer hierarchy, and AMOLED surfaces. */
+:root {
+    color-scheme: light;
+    --primary: #1A73E8;
+    --on-primary: #FFFFFF;
+    --primary-container: #E8F0FE;
+    --on-primary-container: #174EA6;
+    --secondary: #5F6368;
+    --secondary-container: #E8F0FE;
+    --on-secondary-container: #202124;
+    --background: #F6F8FC;
+    --surface: #FFFFFF;
+    --surface-variant: #EEF2F7;
+    --on-surface: #202124;
+    --on-surface-variant: #5F6368;
+    --error: #D93025;
+    --error-container: #FCE8E6;
+    --on-error: #FFFFFF;
+    --outline: #DADCE0;
+}
+html[data-theme="dark"] {
+    color-scheme: dark;
+    --primary: #8AB4F8;
+    --on-primary: #062E6F;
+    --primary-container: #102A43;
+    --on-primary-container: #D2E3FC;
+    --secondary: #AECBFA;
+    --secondary-container: #142638;
+    --on-secondary-container: #E8F0FE;
+    --background: #000000;
+    --surface: #080808;
+    --surface-variant: #181818;
+    --on-surface: #E8EAED;
+    --on-surface-variant: #BDC1C6;
+    --error: #F28B82;
+    --error-container: #3C1D1B;
+    --on-error: #202124;
+    --outline: #3C4043;
+}
+@media (prefers-color-scheme: dark) {
+    html[data-theme="system"] {
+        color-scheme: dark;
+        --primary: #8AB4F8;
+        --on-primary: #062E6F;
+        --primary-container: #102A43;
+        --on-primary-container: #D2E3FC;
+        --secondary: #AECBFA;
+        --secondary-container: #142638;
+        --on-secondary-container: #E8F0FE;
+        --background: #000000;
+        --surface: #080808;
+        --surface-variant: #181818;
+        --on-surface: #E8EAED;
+        --on-surface-variant: #BDC1C6;
+        --error: #F28B82;
+        --error-container: #3C1D1B;
+        --on-error: #202124;
+        --outline: #3C4043;
+    }
+}
+html { background: var(--background); }
+body {
+    background: var(--background);
+    color: var(--on-surface);
+    font-family: Roboto, Arial, sans-serif;
+}
+.main {
+    width: 100%;
+    max-width: 1480px;
+    margin: 0 auto;
+    padding: 26px clamp(16px, 3.2vw, 48px) 0;
+}
+.appbar {
+    padding: 0 0 20px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid var(--surface-variant);
+}
+.appbar-title { font-size: 1.25rem; font-weight: 700; letter-spacing: -.015em; }
+.appbar-subtitle { color: var(--on-surface-variant); }
+.appbar-stat {
+    min-height: 40px;
+    padding: 8px 13px;
+    border: 1px solid color-mix(in srgb, var(--primary) 17%, transparent);
+    border-radius: 10px;
+    background: var(--primary-container);
+    color: var(--on-primary-container);
+}
+.appbar-stat strong, .appbar-stat .material-symbols-outlined { color: var(--primary); }
+.card {
+    padding: 26px;
+    margin-bottom: 20px;
+    border: 1px solid var(--surface-variant);
+    border-radius: 16px;
+    background: var(--surface);
+    box-shadow: 0 2px 10px rgba(60, 64, 67, .055);
+}
+.card:hover { box-shadow: 0 4px 16px rgba(60, 64, 67, .085); }
+.card h3 {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 22px;
+    color: var(--on-surface);
+    font-size: 1.16rem;
+    font-weight: 700;
+    letter-spacing: -.01em;
+}
+.card h3 .material-symbols-outlined { color: var(--primary); }
+.sidebar {
+    border-right: 1px solid var(--surface-variant);
+    border-radius: 0 14px 14px 0;
+    background: var(--surface);
+    box-shadow: 0 8px 30px rgba(32, 33, 36, .14);
+}
+.brand { color: var(--primary); font-weight: 700; }
+.sidebar .brand { font-size: 1.18rem; }
+.drawer-link {
+    min-height: 48px;
+    border-radius: 9px;
+    font-size: .94rem;
+}
+.drawer-link:hover, .drawer-link:focus-visible { transform: none; }
+.theme-action {
+    border-radius: 9px;
+    justify-content: flex-start;
+    box-shadow: none;
+}
+.theme-action.secondary-action { border-color: var(--outline); }
+.stat-card {
+    border: 1px solid color-mix(in srgb, var(--primary) 20%, transparent);
+    border-radius: 13px;
+    background: var(--primary-container);
+    color: var(--on-primary-container);
+}
+.input-wrapper {
+    padding: 9px 13px;
+    border: 1px solid var(--outline);
+    border-bottom: 1px solid var(--outline);
+    border-radius: 9px;
+    background: var(--surface);
+}
+.input-wrapper:focus-within {
+    border-color: var(--primary);
+    background: var(--surface);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary) 15%, transparent);
+}
+.input-wrapper label {
+    display: block;
+    margin-bottom: 2px;
+    color: var(--on-surface-variant);
+    font-size: .72rem;
+    font-weight: 600;
+    letter-spacing: .035em;
+}
+.input-wrapper input, .input-wrapper select { padding: 5px 0 3px; }
+.input-wrapper input::placeholder { color: color-mix(in srgb, var(--on-surface-variant) 76%, transparent); }
+.input-wrapper select option { background: var(--surface); color: var(--on-surface); }
+.file-input-wrapper { gap: 10px; padding: 4px 0; }
+.file-input-wrapper input { max-width: 100%; color: var(--on-surface-variant); }
+button {
+    border-radius: 9px;
+    padding: 11px 18px;
+    font-size: .94rem;
+    font-weight: 600;
+    box-shadow: none;
+}
+button:hover { opacity: 1; box-shadow: 0 2px 7px rgba(26, 115, 232, .20); }
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible {
+    outline: 3px solid color-mix(in srgb, var(--primary) 42%, transparent);
+    outline-offset: 2px;
+}
+button.secondary:hover { box-shadow: 0 2px 7px color-mix(in srgb, var(--error) 20%, transparent); }
+.icon-button {
+    width: 44px;
+    height: 44px;
+    flex-basis: 44px;
+    border-radius: 10px;
+    background: var(--surface-variant);
+    color: var(--on-surface);
+}
+.icon-button:hover { transform: none; background: var(--primary-container); color: var(--primary); }
+.text-button { color: var(--primary); border-radius: 9px; }
+.text-button:hover { background: var(--primary-container); color: var(--on-primary-container); box-shadow: none; }
+.table-container {
+    overflow-x: auto;
+    border: 1px solid var(--surface-variant);
+    border-radius: 11px;
+    background: var(--surface);
+}
+table { min-width: 620px; }
+th, td { padding: 14px 15px; }
+th {
+    background: var(--surface-variant);
+    color: var(--on-surface-variant);
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: .055em;
+    text-transform: uppercase;
+}
+tbody tr:hover { background: color-mix(in srgb, var(--primary) 5%, var(--surface)); }
+.avatar { width: 42px; height: 42px; border-radius: 10px; }
+.chip {
+    padding: 5px 9px;
+    border-radius: 6px;
+    background: var(--primary-container);
+    color: var(--on-primary-container);
+    font-size: .8rem;
+}
+.row-actions button { width: 36px; height: 36px; border-radius: 8px; }
+.row-actions .edit-button { color: var(--primary); background: var(--primary-container); }
+.row-actions .edit-button:hover { color: var(--on-primary); background: var(--primary); }
+.empty-state { padding: 38px 20px; }
+.page-footer { color: var(--on-surface-variant); }
+.fab {
+    right: 26px;
+    bottom: 26px;
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    background: var(--primary);
+    color: var(--on-primary);
+    box-shadow: 0 4px 14px rgba(26, 115, 232, .28);
+}
+.fab:hover { transform: translateY(-2px); background: var(--primary); box-shadow: 0 7px 18px rgba(26, 115, 232, .32); }
+.chat-window {
+    border: 1px solid var(--surface-variant);
+    border-radius: 15px;
+    background: var(--surface);
+    box-shadow: 0 12px 34px rgba(0, 0, 0, .20);
+}
+.chat-header { background: var(--primary); color: #FFFFFF; }
+.chat-msg { padding: 11px 13px; border-radius: 11px; }
+.msg-ai { background: var(--surface-variant); color: var(--on-surface); }
+.msg-user { background: var(--primary); color: #FFFFFF; }
+.chat-input { background: var(--surface); }
+.chat-input input { color: var(--on-surface); }
+.chat-input button { color: var(--primary); border-radius: 8px; }
+.chat-close { border-radius: 8px; }
+.drawer-backdrop { background: rgba(0, 0, 0, .48); }
+
+/* AMOLED mode: true black canvas with separated near-black panels and blue focus states. */
+html[data-theme="dark"] body,
+html[data-theme="dark"] .main { background: #000000 !important; }
+html[data-theme="dark"] .card,
+html[data-theme="dark"] .sidebar,
+html[data-theme="dark"] .chat-window { background: #080808; }
+html[data-theme="dark"] .appbar { border-bottom-color: #202124; }
+html[data-theme="dark"] .table-container { border-color: #242424; background: #080808; }
+html[data-theme="dark"] th { background: #141414; color: #BDC1C6; }
+html[data-theme="dark"] tbody tr:hover { background: #101923; }
+html[data-theme="dark"] .input-wrapper { border-color: #383838; background: #0A0A0A; }
+html[data-theme="dark"] .input-wrapper:focus-within { border-color: #8AB4F8; background: #0A0A0A; }
+html[data-theme="dark"] .chat-input { background: #080808; }
+html[data-theme="dark"] .msg-ai { background: #191919; color: #E8EAED; }
+html[data-theme="dark"] .drawer-link:hover,
+html[data-theme="dark"] .drawer-link:focus-visible { background: #102A43; color: #D2E3FC; }
+html[data-theme="dark"] .icon-button { background: #181818; color: #E8EAED; }
+html[data-theme="dark"] .icon-button:hover { background: #102A43; color: #8AB4F8; }
+html[data-theme="dark"] .theme-action.secondary-action { border-color: #303134; }
+html[data-theme="dark"] .appbar-stat { border-color: #193A5A; }
+html[data-theme="dark"] .stat-card { border-color: #193A5A; }
+
+@media (prefers-color-scheme: dark) {
+    html[data-theme="system"] body,
+    html[data-theme="system"] .main { background: #000000 !important; }
+    html[data-theme="system"] .card,
+    html[data-theme="system"] .sidebar,
+    html[data-theme="system"] .chat-window { background: #080808; }
+    html[data-theme="system"] .appbar { border-bottom-color: #202124; }
+    html[data-theme="system"] .table-container { border-color: #242424; background: #080808; }
+    html[data-theme="system"] th { background: #141414; color: #BDC1C6; }
+    html[data-theme="system"] tbody tr:hover { background: #101923; }
+    html[data-theme="system"] .input-wrapper { border-color: #383838; background: #0A0A0A; }
+    html[data-theme="system"] .input-wrapper:focus-within { border-color: #8AB4F8; background: #0A0A0A; }
+    html[data-theme="system"] .chat-input { background: #080808; }
+    html[data-theme="system"] .msg-ai { background: #191919; color: #E8EAED; }
+}
+@media (max-width: 768px) {
+    .main { padding: 14px 14px 0; }
+    .appbar { gap: 10px; padding-bottom: 15px; margin-bottom: 18px; }
+    .card { padding: 20px 17px; border-radius: 13px; }
+    .sidebar { border-radius: 0 12px 12px 0; }
+    .fab { right: 18px; bottom: 18px; }
+    th, td { padding: 11px; }
+}
+@media (max-width: 460px) {
+    .appbar-stat { min-height: 38px; border-radius: 8px; }
+    .appbar-title { font-size: .98rem; }
+    .appbar-subtitle { font-size: .7rem; }
+    .card h3 { font-size: 1.08rem; }
+}
+
+
+/* Interaction polish, in-app pickers and Material You dynamic colour layer. */
+:root { --motion-standard: cubic-bezier(.2,.75,.25,1); --motion-emphasized: cubic-bezier(.2,.9,.25,1); }
+html { -webkit-tap-highlight-color: transparent; }
+button, .drawer-link, .field-picker, .branch-option, .palette-swatch { touch-action: manipulation; position: relative; overflow: hidden; }
+button, .drawer-link, .card, tbody tr, .input-wrapper, .field-picker, .fab, .chat-msg { transition-timing-function: var(--motion-standard); }
+button:active, .drawer-link:active, .field-picker:active, .branch-option:active, .row-actions button:active { transform: scale(.965); filter: brightness(.97); }
+button.is-pressed, .drawer-link.is-pressed, .field-picker.is-pressed { transform: scale(.975); }
+.touch-ripple { position:absolute; border-radius:50%; pointer-events:none; background:color-mix(in srgb, var(--primary) 22%, transparent); transform:scale(0); animation:touchRipple 520ms var(--motion-standard) forwards; }
+@keyframes touchRipple { to { transform:scale(1); opacity:0; } }
+.card { animation:cardEnter 420ms var(--motion-emphasized) both; }
+#directoryCard { animation-delay:55ms; }
+@keyframes cardEnter { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
+tbody tr { animation:rowEnter 260ms var(--motion-standard) both; }
+@keyframes rowEnter { from { opacity:0; transform:translateY(5px); } to { opacity:1; transform:translateY(0); } }
+.input-wrapper { transition: border-color 180ms ease, background-color 180ms ease, box-shadow 180ms ease, transform 180ms ease; }
+.input-wrapper:focus-within { transform:translateY(-1px); }
+/* Avoid the browser's nested focus rectangle: the wrapper owns the focus ring. */
+.input-wrapper input:focus, .input-wrapper select:focus { outline:none !important; box-shadow:none !important; }
+.branch-data-source { display:none !important; }
+.field-picker { width:100%; min-height:42px; padding:5px 0 3px; display:flex; align-items:center; justify-content:space-between; gap:12px; background:transparent; color:var(--on-surface); border:0; border-radius:6px; box-shadow:none; text-align:left; font-size:1rem; font-weight:400; }
+.field-picker:hover { background:transparent; box-shadow:none; color:var(--primary); }
+.field-picker .material-symbols-outlined { font-size:22px; color:var(--on-surface-variant); }
+.file-picker-row { display:flex; align-items:center; flex-wrap:wrap; gap:12px; }
+.file-picker-button { display:inline-flex; align-items:center; gap:8px; background:var(--primary-container); color:var(--on-primary-container); border:1px solid color-mix(in srgb,var(--primary) 18%,transparent); }
+.file-picker-button:hover { background:var(--primary); color:var(--on-primary); }
+.file-name { color:var(--on-surface-variant); font-size:.88rem; overflow-wrap:anywhere; }
+.image-preview-wrap { display:flex; align-items:center; gap:12px; margin-top:8px; }
+.image-preview-wrap img { width:52px; height:52px; border-radius:10px; object-fit:cover; border:1px solid var(--surface-variant); }
+.sheet-backdrop { position:fixed; inset:0; z-index:1800; background:rgba(0,0,0,.48); opacity:0; visibility:hidden; transition:opacity 220ms ease, visibility 220ms ease; backdrop-filter:blur(3px); }
+.sheet-backdrop.is-visible { opacity:1; visibility:visible; }
+.selection-sheet { position:fixed; z-index:1801; left:50%; top:50%; width:min(560px,calc(100vw - 32px)); max-height:min(78dvh,680px); overflow:auto; padding:18px 18px 12px; background:var(--surface); color:var(--on-surface); border:1px solid var(--surface-variant); border-radius:22px; box-shadow:0 18px 60px rgba(0,0,0,.28); opacity:0; visibility:hidden; transform:translate(-50%,-46%) scale(.97); transition:opacity 220ms ease, transform 260ms var(--motion-emphasized), visibility 220ms ease; overscroll-behavior:contain; }
+.selection-sheet.is-open { opacity:1; visibility:visible; transform:translate(-50%,-50%) scale(1); }
+.sheet-handle { display:none; width:36px; height:4px; border-radius:9px; background:var(--outline); opacity:.65; margin:0 auto 16px; }
+.sheet-heading { display:flex; justify-content:space-between; align-items:center; gap:12px; padding:2px 2px 14px; border-bottom:1px solid var(--surface-variant); }
+.sheet-eyebrow { color:var(--primary); font-size:.68rem; font-weight:700; letter-spacing:.11em; margin-bottom:4px; }
+.sheet-heading h2 { font-size:1.25rem; font-weight:700; }
+.branch-options { display:grid; gap:5px; padding-top:10px; }
+.branch-option { display:flex; align-items:center; justify-content:space-between; width:100%; min-height:52px; padding:10px 13px; border-radius:11px; background:transparent; color:var(--on-surface); text-align:left; font-weight:500; box-shadow:none; }
+.branch-option:hover, .branch-option[aria-checked="true"] { background:var(--primary-container); color:var(--on-primary-container); box-shadow:none; }
+.branch-option .material-symbols-outlined { color:var(--primary); opacity:0; }
+.branch-option[aria-checked="true"] .material-symbols-outlined { opacity:1; }
+.palette-controls { display:grid; gap:10px; }
+.palette-swatches { display:flex; align-items:center; flex-wrap:wrap; gap:12px; padding:2px 12px 4px; }
+button.palette-swatch { width:34px; height:34px; flex:0 0 34px; padding:0; border:2px solid var(--surface); outline:1px solid transparent; outline-offset:2px; border-radius:50%; background:var(--swatch); box-shadow:0 1px 4px rgba(0,0,0,.2); }
+button.palette-swatch.selected { outline:2px solid var(--primary); transform:scale(1.08); }
+.theme-action { transition:background-color 200ms ease,color 200ms ease,transform 180ms ease; }
+.chat-msg { animation:messageIn 260ms var(--motion-emphasized) both; transform-origin:bottom; }
+@keyframes messageIn { from { opacity:0; transform:translateY(9px) scale(.985); } to { opacity:1; transform:translateY(0) scale(1); } }
+.typing-indicator { display:flex; align-items:center; gap:5px; min-width:54px; min-height:34px; }
+.typing-indicator span { width:6px; height:6px; border-radius:50%; background:var(--on-surface-variant); animation:typingBounce 900ms infinite ease-in-out; }
+.typing-indicator span:nth-child(2) { animation-delay:120ms; } .typing-indicator span:nth-child(3) { animation-delay:240ms; }
+@keyframes typingBounce { 0%,60%,100% { transform:translateY(0); opacity:.55; } 30% { transform:translateY(-4px); opacity:1; } }
+.chat-input button:active, .fab:active { transform:scale(.92); }
+html[data-theme="dark"] .selection-sheet { background:#080808; border-color:#303134; }
+html[data-theme="dark"] .branch-option:hover, html[data-theme="dark"] .branch-option[aria-checked="true"] { background:#102A43; color:#D2E3FC; }
+html[data-theme="dark"] .file-picker-button { background:#102A43; color:#D2E3FC; }
+@media (max-width:600px) {
+ .selection-sheet { top:auto; bottom:0; left:0; width:100%; max-width:none; max-height:min(78dvh,720px); border-radius:22px 22px 0 0; padding:12px 16px max(14px,env(safe-area-inset-bottom)); transform:translateY(30px); }
+ .selection-sheet.is-open { transform:translateY(0); }
+ .sheet-handle { display:block; }
+ .branch-option { min-height:54px; }
+ .file-picker-row { align-items:flex-start; }
+}
+body.sheet-open { overflow:hidden; }
+@media (prefers-reduced-motion:reduce) { .card,tbody tr,.chat-msg,.touch-ripple,.typing-indicator span { animation:none !important; } }
 
 </style>
 </head>
@@ -673,17 +1016,17 @@ button.palette-swatch.selected { outline: 2px solid var(--primary); }
             <span>Use device theme</span>
         </button>
         <p class="theme-status" id="themeStatus" aria-live="polite">Following device settings</p>
-        <div class="palette-controls" aria-label="Accent color palette">
-            <p class="drawer-section-label">Accent palette</p>
-            <div class="palette-swatches" role="group" aria-label="Choose an accent palette">
-                <button type="button" class="palette-swatch" data-palette="device" aria-label="Device accent" title="Device accent" style="--swatch: linear-gradient(135deg, #6750A4 0 25%, #3665CC 25% 50%, #386A20 50% 75%, #B32663 75%);"></button>
-                <button type="button" class="palette-swatch" data-palette="violet" aria-label="Violet palette" title="Violet" style="--swatch: #6750A4;"></button>
-                <button type="button" class="palette-swatch" data-palette="blue" aria-label="Blue palette" title="Blue" style="--swatch: #3665CC;"></button>
-                <button type="button" class="palette-swatch" data-palette="green" aria-label="Green palette" title="Green" style="--swatch: #386A20;"></button>
-                <button type="button" class="palette-swatch" data-palette="rose" aria-label="Rose palette" title="Rose" style="--swatch: #B32663;"></button>
-                <button type="button" class="palette-swatch" data-palette="amber" aria-label="Amber palette" title="Amber" style="--swatch: #795900;"></button>
+        <div class="palette-controls" aria-label="Material You colour themes">
+            <p class="drawer-section-label">Material You colour</p>
+            <div class="palette-swatches" role="group" aria-label="Choose an accent colour">
+                <button type="button" class="palette-swatch" data-palette="blue" aria-label="Google Blue" title="Google Blue" style="--swatch:#1A73E8"></button>
+                <button type="button" class="palette-swatch" data-palette="teal" aria-label="Teal" title="Teal" style="--swatch:#008577"></button>
+                <button type="button" class="palette-swatch" data-palette="violet" aria-label="Violet" title="Violet" style="--swatch:#6750A4"></button>
+                <button type="button" class="palette-swatch" data-palette="green" aria-label="Green" title="Green" style="--swatch:#386A20"></button>
+                <button type="button" class="palette-swatch" data-palette="rose" aria-label="Rose" title="Rose" style="--swatch:#B32663"></button>
+                <button type="button" class="palette-swatch" data-palette="amber" aria-label="Amber" title="Amber" style="--swatch:#795900"></button>
             </div>
-            <p class="theme-status" id="paletteStatus" aria-live="polite">Using device accent when available</p>
+            <p class="theme-status" id="paletteStatus" aria-live="polite">Google Blue selected</p>
         </div>
     </section>
     <div class="stat-card">
@@ -699,7 +1042,7 @@ button.palette-swatch.selected { outline: 2px solid var(--primary); }
         </button>
         <div class="appbar-heading">
             <span class="appbar-title">Student Management</span>
-            <span class="appbar-subtitle">Material You student portal</span>
+            <span class="appbar-subtitle">Student records · Local-first workspace</span>
         </div>
         <div class="appbar-stat" aria-label="Total enrolled students">
             <span class="material-symbols-outlined">groups</span>
@@ -723,7 +1066,7 @@ button.palette-swatch.selected { outline: 2px solid var(--primary); }
 
             <div class="input-wrapper">
                 <label>Branch / Department</label>
-                <select id="branch">
+                <select id="branch" class="branch-data-source" tabindex="-1" aria-hidden="true">
                     <option value="">Select Branch</option>
                     <option value="Computer Science (CSE)">Computer Science (CSE)</option>
                     <option value="Information Tech (IT)">Information Tech (IT)</option>
@@ -735,11 +1078,20 @@ button.palette-swatch.selected { outline: 2px solid var(--primary); }
                     <option value="Aerospace (AE)">Aerospace (AE)</option>
                     <option value="Biotechnology (BT)">Biotechnology (BT)</option>
                 </select>
+                <button type="button" class="field-picker" id="branchPicker" aria-haspopup="dialog" aria-controls="branchDialog" aria-expanded="false">
+                    <span id="branchPickerValue">Select Branch</span>
+                    <span class="material-symbols-outlined">expand_more</span>
+                </button>
             </div>
 
             <div class="file-input-wrapper">
                 <label style="font-size: 0.75rem; color: var(--on-surface-variant);">Profile Picture</label>
-                <input type="file" id="image" accept="image/*">
+                <input type="file" id="image" accept="image/*" hidden>
+                <div class="file-picker-row">
+                    <button type="button" class="file-picker-button" id="imagePickerButton"><span class="material-symbols-outlined">add_photo_alternate</span> Choose image</button>
+                    <span id="imageFileName" class="file-name" aria-live="polite">No image selected</span>
+                </div>
+                <div id="imagePreviewWrap" class="image-preview-wrap" hidden><img id="imagePreview" alt="Selected profile preview"><button type="button" class="text-button" id="removeImageButton">Remove image</button></div>
             </div>
         </div>
         <div class="form-actions">
@@ -781,6 +1133,14 @@ button.palette-swatch.selected { outline: 2px solid var(--primary); }
     <footer class="page-footer">Copyright © 2026 Divyansh Katiyar | CalcuPress — All Rights Reserved.</footer>
 </div>
 
+<!-- Native-looking controls are replaced with an in-app Material You selection sheet. -->
+<div class="sheet-backdrop" id="branchBackdrop" aria-hidden="true"></div>
+<section class="selection-sheet" id="branchDialog" role="dialog" aria-modal="true" aria-labelledby="branchDialogTitle" aria-hidden="true">
+    <div class="sheet-handle"></div>
+    <div class="sheet-heading"><div><p class="sheet-eyebrow">STUDENT DETAILS</p><h2 id="branchDialogTitle">Select branch</h2></div><button type="button" class="icon-button" id="branchDialogClose" aria-label="Close branch selector"><span class="material-symbols-outlined">close</span></button></div>
+    <div class="branch-options" id="branchOptionsList" role="radiogroup" aria-label="Available branches"></div>
+</section>
+
 <!-- AI Chat Assistant -->
 <button type="button" class="fab" id="assistantFab" onclick="toggleChat()" aria-label="Open SMS AI Assistant" aria-expanded="false" title="Open AI assistant">
     <span class="material-symbols-outlined" style="font-size: 32px;">smart_toy</span>
@@ -807,14 +1167,8 @@ button.palette-swatch.selected { outline: 2px solid var(--primary); }
 
 const STORAGE_KEY = 'sms_students';
 const THEME_STORAGE_KEY = 'sms_theme_mode';
-const PALETTE_STORAGE_KEY = 'sms_theme_palette';
-const ACCENT_PALETTES = {
-    violet: { light: '#6750A4', dark: '#D0BCFF', label: 'Violet' },
-    blue: { light: '#3665CC', dark: '#A8C7FA', label: 'Blue' },
-    green: { light: '#386A20', dark: '#A8D99A', label: 'Green' },
-    rose: { light: '#B32663', dark: '#FFB1C8', label: 'Rose' },
-    amber: { light: '#795900', dark: '#E9C46A', label: 'Amber' }
-};
+const PALETTE_STORAGE_KEY = 'sms_material_palette';
+const MATERIAL_PALETTES = { blue:{light:'#1A73E8',dark:'#8AB4F8',label:'Google Blue'}, teal:{light:'#008577',dark:'#80CBC4',label:'Teal'}, violet:{light:'#6750A4',dark:'#D0BCFF',label:'Violet'}, green:{light:'#386A20',dark:'#A8D99A',label:'Green'}, rose:{light:'#B32663',dark:'#FFB1C8',label:'Rose'}, amber:{light:'#795900',dark:'#E9C46A',label:'Amber'} };
 const DEFAULT_AVATAR = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23625B71'%3E%3Cpath d='M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z'/%3E%3C/svg%3E";
 const branchOptions = Array.from(document.querySelectorAll('#branch option')).filter(option => option.value);
 let students = loadStudents();
@@ -995,8 +1349,11 @@ function startEditStudent(id) {
     editingStudentId = student.id;
     document.getElementById('name').value = student.name;
     document.getElementById('roll').value = student.roll;
-    document.getElementById('branch').value = student.branch;
+    setBranch(student.branch);
     document.getElementById('image').value = '';
+    document.getElementById('imageFileName').textContent = 'No image selected';
+    document.getElementById('imagePreviewWrap').hidden = true;
+    document.getElementById('imagePreview').removeAttribute('src');
     document.getElementById('studentFormTitle').innerHTML = '<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">edit</span>Update Student';
     document.getElementById('saveStudentIcon').textContent = 'save_as';
     document.getElementById('saveStudentLabel').textContent = 'Update Student';
@@ -1042,9 +1399,56 @@ function searchStudent() {
 function clearForm() {
     document.getElementById('name').value = '';
     document.getElementById('roll').value = '';
-    document.getElementById('branch').value = '';
+    setBranch('');
     document.getElementById('image').value = '';
+    document.getElementById('imageFileName').textContent = 'No image selected';
+    document.getElementById('imagePreviewWrap').hidden = true;
+    document.getElementById('imagePreview').removeAttribute('src');
 }
+
+// --- In-app Material You branch selector ---
+function openBranchPicker() {
+    const dialog=document.getElementById('branchDialog');
+    const list=document.getElementById('branchOptionsList');
+    list.replaceChildren();
+    branchOptions.forEach(option=>{
+        const button=document.createElement('button'); button.type='button'; button.className='branch-option';
+        button.setAttribute('role','radio'); button.setAttribute('aria-checked',String(document.getElementById('branch').value===option.value));
+        const label=document.createElement('span'); label.textContent=option.textContent;
+        const check=document.createElement('span'); check.className='material-symbols-outlined'; check.textContent='check_circle';
+        button.append(label,check); button.addEventListener('click',()=>{ setBranch(option.value); closeBranchPicker(); }); list.appendChild(button);
+    });
+    document.getElementById('branchBackdrop').classList.add('is-visible');
+    dialog.classList.add('is-open'); dialog.setAttribute('aria-hidden','false');
+    document.getElementById('branchPicker').setAttribute('aria-expanded','true');
+    document.body.classList.add('sheet-open');
+    const selected=list.querySelector('[aria-checked="true"]');
+    (selected || list.querySelector('button'))?.focus({preventScroll:true});
+}
+function closeBranchPicker() {
+    document.getElementById('branchBackdrop').classList.remove('is-visible');
+    const dialog=document.getElementById('branchDialog'); dialog.classList.remove('is-open'); dialog.setAttribute('aria-hidden','true');
+    document.getElementById('branchPicker').setAttribute('aria-expanded','false');
+    document.body.classList.remove('sheet-open');
+    document.getElementById('branchPicker').focus({preventScroll:true});
+}
+function setBranch(value) {
+    document.getElementById('branch').value=value;
+    document.getElementById('branchPickerValue').textContent=value || 'Select Branch';
+    document.getElementById('branchPicker').classList.toggle('has-value',!!value);
+}
+document.getElementById('branchPicker').addEventListener('click',openBranchPicker);
+document.getElementById('branchDialogClose').addEventListener('click',closeBranchPicker);
+document.getElementById('branchBackdrop').addEventListener('click',closeBranchPicker);
+document.getElementById('imagePickerButton').addEventListener('click',()=>document.getElementById('image').click());
+document.getElementById('image').addEventListener('change',()=>{
+    const file=document.getElementById('image').files?.[0];
+    document.getElementById('imageFileName').textContent=file ? file.name : 'No image selected';
+    const wrap=document.getElementById('imagePreviewWrap');
+    if(file && file.type.startsWith('image/')) { const reader=new FileReader(); reader.onload=()=>{document.getElementById('imagePreview').src=String(reader.result);wrap.hidden=false;}; reader.readAsDataURL(file); }
+    else { wrap.hidden=true; document.getElementById('imagePreview').removeAttribute('src'); }
+});
+document.getElementById('removeImageButton').addEventListener('click',()=>{ document.getElementById('image').value=''; document.getElementById('imageFileName').textContent='No image selected'; document.getElementById('imagePreviewWrap').hidden=true; document.getElementById('imagePreview').removeAttribute('src'); });
 
 // --- Navigation drawer: button, backdrop, Escape, and edge-swipe support ---
 function openDrawer() {
@@ -1068,7 +1472,7 @@ document.getElementById('menuButton').addEventListener('click', toggleDrawer);
 document.getElementById('drawerClose').addEventListener('click', closeDrawer);
 document.getElementById('drawerBackdrop').addEventListener('click', closeDrawer);
 document.querySelectorAll('.drawer-link').forEach(link => link.addEventListener('click', closeDrawer));
-document.addEventListener('keydown', event => { if (event.key === 'Escape') { closeDrawer(); if (pendingAssistantDeleteId !== null) { pendingAssistantDeleteId = null; } } });
+document.addEventListener('keydown', event => { if (event.key === 'Escape') { closeDrawer(); closeBranchPicker(); if (pendingAssistantDeleteId !== null) { pendingAssistantDeleteId = null; } } });
 let touchStartX = null;
 let touchStartY = null;
 document.addEventListener('touchstart', event => {
@@ -1093,83 +1497,39 @@ document.addEventListener('touchend', event => {
 function loadThemeMode() {
     try {
         const saved = localStorage.getItem(THEME_STORAGE_KEY);
-        return ['light', 'dark', 'system'].includes(saved) ? saved : 'system';
-    } catch (_) { return 'system'; }
+        return ['light', 'dark', 'system'].includes(saved) ? saved : 'light';
+    } catch (_) { return 'light'; }
 }
 function effectiveTheme(mode = themeMode) {
     return mode === 'system' ? (systemDarkQuery.matches ? 'dark' : 'light') : mode;
 }
-function luminanceFromRgb(rgbText) {
-    const match = rgbText.match(/rgba?\((\d+)\s*,\s*(\d+)\s*,\s*(\d+)/i);
-    if (!match) return 0.25;
-    const channels = match.slice(1, 4).map(Number).map(value => {
-        const normalized = value / 255;
-        return normalized <= 0.04045 ? normalized / 12.92 : ((normalized + 0.055) / 1.055) ** 2.4;
-    });
-    return channels[0] * 0.2126 + channels[1] * 0.7152 + channels[2] * 0.0722;
+function loadPaletteMode() { try { const value=localStorage.getItem(PALETTE_STORAGE_KEY); return Object.prototype.hasOwnProperty.call(MATERIAL_PALETTES,value) ? value : 'blue'; } catch (_) { return 'blue'; } }
+function applyPalette(mode, persist=true) {
+    paletteMode = Object.prototype.hasOwnProperty.call(MATERIAL_PALETTES,mode) ? mode : 'blue';
+    const palette = MATERIAL_PALETTES[paletteMode];
+    const dark = effectiveTheme() === 'dark';
+    const root = document.documentElement;
+    root.style.setProperty('--primary', palette[dark ? 'dark' : 'light']);
+    root.style.setProperty('--primary-container', dark ? `color-mix(in srgb, ${palette.dark} 22%, #080808)` : `color-mix(in srgb, ${palette.light} 13%, #FFFFFF)`);
+    root.style.setProperty('--on-primary-container', dark ? '#E8F0FE' : (paletteMode==='blue' ? '#174EA6' : palette.light));
+    root.style.setProperty('--secondary-container', dark ? `color-mix(in srgb, ${palette.dark} 13%, #080808)` : `color-mix(in srgb, ${palette.light} 9%, #FFFFFF)`);
+    root.dataset.palette = paletteMode;
+    document.querySelectorAll('.palette-swatch').forEach(button => { const selected=button.dataset.palette===paletteMode; button.classList.toggle('selected',selected); button.setAttribute('aria-pressed',String(selected)); });
+    const status=document.getElementById('paletteStatus'); if(status) status.textContent=`${palette.label} selected`;
+    if(persist) { try { localStorage.setItem(PALETTE_STORAGE_KEY,paletteMode); } catch(error) { console.warn('Palette preference could not be saved.',error); } }
 }
-function loadPaletteMode() {
-    try {
-        const saved = localStorage.getItem(PALETTE_STORAGE_KEY);
-        return saved === 'device' || Object.prototype.hasOwnProperty.call(ACCENT_PALETTES, saved) ? saved : 'device';
-    } catch (_) { return 'device'; }
-}
-function readSystemAccent() {
-    if (!window.CSS || !CSS.supports || !CSS.supports('color', 'AccentColor')) return null;
-    const probe = document.createElement('span');
-    probe.style.cssText = 'position:fixed;visibility:hidden;color:AccentColor;pointer-events:none';
-    document.body.appendChild(probe);
-    const accent = getComputedStyle(probe).color;
-    probe.remove();
-    if (!accent || accent === 'AccentColor' || accent === 'rgba(0, 0, 0, 0)') return null;
-    return accent;
-}
-function applyDynamicDeviceAccent() {
-    const actual = effectiveTheme();
-    let accent = null;
-    let sourceLabel = '';
-    if (paletteMode === 'device') {
-        accent = readSystemAccent();
-        if (accent) {
-            sourceLabel = 'Using the device accent exposed by this browser';
-        } else {
-            // Browsers generally do not expose Android's wallpaper-derived Monet palette to web pages.
-            document.documentElement.style.removeProperty('--primary');
-            document.documentElement.style.removeProperty('--on-primary');
-            sourceLabel = 'Device accent is unavailable here; using the Material You default';
-        }
-    } else {
-        const palette = ACCENT_PALETTES[paletteMode];
-        accent = palette[actual === 'dark' ? 'dark' : 'light'];
-        sourceLabel = `Using ${palette.label} accent`;
-    }
-    if (accent) {
-        document.documentElement.style.setProperty('--primary', accent);
-        document.documentElement.style.setProperty('--on-primary', luminanceFromRgb(accent) > 0.42 ? '#202124' : '#FFFFFF');
-    }
-    document.documentElement.dataset.palette = paletteMode;
-    document.querySelectorAll('.palette-swatch').forEach(button => {
-        const selected = button.dataset.palette === paletteMode;
-        button.classList.toggle('selected', selected);
-        button.setAttribute('aria-pressed', String(selected));
-    });
-    const status = document.getElementById('paletteStatus');
-    if (status) status.textContent = sourceLabel;
-}
-function selectPalette(mode) {
-    paletteMode = mode === 'device' || Object.prototype.hasOwnProperty.call(ACCENT_PALETTES, mode) ? mode : 'device';
-    try { localStorage.setItem(PALETTE_STORAGE_KEY, paletteMode); } catch (error) { console.warn('Accent preference could not be saved.', error); }
-    applyDynamicDeviceAccent();
-}
-document.querySelectorAll('.palette-swatch').forEach(button => {
-    button.addEventListener('click', () => selectPalette(button.dataset.palette));
-});
+document.querySelectorAll('.palette-swatch').forEach(button => button.addEventListener('click',()=>applyPalette(button.dataset.palette))); 
+
 function applyTheme(mode, persist = true) {
     themeMode = ['light', 'dark', 'system'].includes(mode) ? mode : 'system';
     document.documentElement.dataset.theme = themeMode;
     const actual = effectiveTheme();
+    applyPalette(paletteMode, false);
     document.documentElement.style.colorScheme = actual;
-    applyDynamicDeviceAccent();
+    const pageBackground = getComputedStyle(document.documentElement).getPropertyValue('--background').trim() || (actual === 'dark' ? '#000000' : '#F6F8FC');
+    document.body.style.backgroundColor = pageBackground;
+    const mainSurface = document.querySelector('.main');
+    if (mainSurface) mainSurface.style.backgroundColor = pageBackground;
     document.getElementById('themeToggleIcon').textContent = actual === 'dark' ? 'light_mode' : 'dark_mode';
     document.getElementById('themeToggleLabel').textContent = actual === 'dark' ? 'Switch to light theme' : 'Switch to dark theme';
     document.getElementById('themeStatus').textContent = themeMode === 'system'
@@ -1186,6 +1546,23 @@ document.getElementById('systemThemeButton').addEventListener('click', () => app
 if (systemDarkQuery.addEventListener) systemDarkQuery.addEventListener('change', () => { if (themeMode === 'system') applyTheme('system', false); });
 else if (systemDarkQuery.addListener) systemDarkQuery.addListener(() => { if (themeMode === 'system') applyTheme('system', false); });
 
+// --- Touch feedback: subtle visual press/ripple plus optional Android haptics ---
+function haptic(duration=8) { try { if (navigator.vibrate && navigator.userActivation?.hasBeenActive !== false) navigator.vibrate(duration); } catch (_) {} }
+document.addEventListener('pointerdown',event=>{
+    const target=event.target.closest('button,.drawer-link,.field-picker,.branch-option,.row-actions button');
+    if(!target || target.disabled) return;
+    target.classList.add('is-pressed');
+    haptic(target.classList.contains('fab') ? 12 : 7);
+    const rect=target.getBoundingClientRect();
+    const diameter=Math.max(rect.width,rect.height)*1.35;
+    const ripple=document.createElement('span'); ripple.className='touch-ripple';
+    ripple.style.width=ripple.style.height=`${diameter}px`;
+    ripple.style.left=`${event.clientX-rect.left-diameter/2}px`;
+    ripple.style.top=`${event.clientY-rect.top-diameter/2}px`;
+    target.appendChild(ripple); ripple.addEventListener('animationend',()=>ripple.remove(),{once:true});
+},{passive:true});
+['pointerup','pointercancel','pointerleave'].forEach(type=>document.addEventListener(type,event=>{ const target=event.target.closest?.('.is-pressed'); if(target) target.classList.remove('is-pressed'); },{passive:true}));
+
 // --- Local intent-aware assistant operating on the same persistent student records ---
 function toggleChat() {
     const chat = document.getElementById('chatWindow');
@@ -1193,7 +1570,8 @@ function toggleChat() {
     chat.classList.toggle('is-open', opening);
     chat.setAttribute('aria-hidden', opening ? 'false' : 'true');
     document.getElementById('assistantFab').setAttribute('aria-expanded', String(opening));
-    if (opening) document.getElementById('chatInput').focus();
+    document.getElementById('assistantFab').classList.toggle('assistant-active',opening);
+    if (opening) setTimeout(()=>document.getElementById('chatInput').focus(),180);
 }
 function handleChatEnter(event) { if (event.key === 'Enter') { event.preventDefault(); sendMsg(); } }
 function cleanValue(value) {
@@ -1268,7 +1646,7 @@ function createStudentFromAssistant(data) {
     pendingAssistantCreate = null;
     document.getElementById('name').value = name;
     document.getElementById('roll').value = roll;
-    document.getElementById('branch').value = branch;
+    setBranch(branch);
     addStudent({ name, roll, branch, fromAssistant: true });
 }
 function continuePendingCreate(text) {
@@ -1429,20 +1807,31 @@ function sendMsg() {
     // Immediate local intent processing keeps CRUD operations responsive and offline-capable.
     processAssistantCommand(message);
 }
-function aiResponse(text) { appendMsg(text, 'msg-ai'); }
+let assistantReplyTimer = null;
+let assistantTypingNode = null;
+function aiResponse(text) {
+    const body=document.getElementById('chatBody');
+    if(assistantReplyTimer) clearTimeout(assistantReplyTimer);
+    if(assistantTypingNode) assistantTypingNode.remove();
+    const typing=document.createElement('div'); typing.className='chat-msg msg-ai typing-indicator'; typing.setAttribute('aria-label','Assistant is responding');
+    typing.innerHTML='<span></span><span></span><span></span>'; body.appendChild(typing); assistantTypingNode=typing; body.scrollTop=body.scrollHeight;
+    assistantReplyTimer=setTimeout(()=>{ typing.remove(); assistantTypingNode=null; appendMsg(text,'msg-ai'); assistantReplyTimer=null; },260);
+}
 function appendMsg(text, className) {
     const body = document.getElementById('chatBody');
     const div = document.createElement('div');
     div.className = `chat-msg ${className}`;
     div.textContent = String(text);
     body.appendChild(div);
-    body.scrollTop = body.scrollHeight;
+    body.scrollTo({top:body.scrollHeight,behavior:'smooth'});
 }
 
-// Initialize with saved records, their current filter, the stored theme, and dynamic accent when supported.
+// Initialize saved records and apply the persisted theme preference.
 updateCount();
 searchStudent();
 applyTheme(themeMode, false);
+setBranch(document.getElementById('branch').value);
+applyPalette(paletteMode, false);
 </script>
 <script>
   if ('serviceWorker' in navigator) {
