@@ -126,7 +126,4 @@ Focus is placed on:
 ## 📌 Author
 
 Developed as part of continuous skill development in **Web Development and Software Engineering**.
-
----
-
-⭐ If you find this repository useful, feel free to explore the projects and follow the progress.
+> ⭐ If you find this repository useful, feel free to explore the projects and follow the progress.
